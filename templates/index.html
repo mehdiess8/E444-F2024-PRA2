@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flasky</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Flasky</a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Greeting -->
+        <h1 class="mt-4">Hello Mehdi!</h1>
+
+        <!-- Time information -->
+        <p>The local date and time is <span id="time"></span>.</p>
+        <p>That was <span id="timeAgo"></span> ago.</p>
+    </div>
+
+    <!-- Moment.js for time formatting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+        document.getElementById('time').textContent = moment().format('LLLL');
+        document.getElementById('timeAgo').textContent = moment().subtract(3, 'minutes').fromNow();
+    </script>
+</body>
+</html>
