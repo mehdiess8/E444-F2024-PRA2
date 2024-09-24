@@ -14,7 +14,7 @@ https://github.com/miguelgrinberg/flasky
 ## Activity 1.3
 <p align="center"> 
   <kbd>
-    <img src="./images/Screenshot 2024-09-23 181751.png">
+    <img src="./images/Screenshot 2024-09-23 224850.png">
   </a>
   </kbd>
 </p>
