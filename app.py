@@ -82,12 +82,12 @@ def index():
             flash('Looks like you have changed your email!')
 
 
-        if "utoronto" not in email:
-            flag = False
-            session['email'] = None
-        else:
+        if email.endswith("utoronto.ca"):
             flag = True
             session['email'] = email
+        else:
+            flag = False
+            session['email'] = None
 
         session['name'] = name
         return redirect(url_for('index', name=name, email=email))
